@@ -1,0 +1,55 @@
+* {padding: 0; margin: 0;}
+
+
+		#main {
+			display: grid;
+			/*grid-template-rows: 15vh 10vh 55vh;*/
+			grid-template-columns: 30vw 24vw 24vw 24vw;
+			grid-template-areas: "header content content content" "footer footer footer footer";
+			font-family: 'Cutive Mono', monospace;
+			text-align: justify;
+    		font-size: 14px;
+    		color: #223f83;
+
+
+		}
+
+		.mainHeader {grid-area: header;
+			padding: 50px 50px 30px;
+
+		 }
+			.mainHeader p {
+			width: 230px;
+    		line-height: 1em;
+			}
+			.mainHeader a {
+    		font-size: 13px;
+			}
+
+
+		
+		.Content {grid-area: content; 
+		padding: 50px 0px 0px;
+		}
+		.card {
+			width: 25rem;
+		}
+		.shuf {
+
+		}
+		.card a {
+			text-transform: uppercase;
+			font-weight: bold;
+    		font-size: 13;
+    		text-decoration: none;
+
+		}
+		
+		.mainFooter {grid-area: footer; background: orange;}
+        .poster{
+        grid-column: 1 / 3;
+        grid row: 2 / 3;
+        }
+
+/*font-family: 'Cutive Mono', monospace;
+font-family: 'Cutive', serif;*/
