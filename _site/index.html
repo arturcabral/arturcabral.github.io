@@ -1,18 +1,20 @@
+<!doctype html>
 <html>
-<head>
-	<title>Hello Word</title>
-	<link rel="stylesheet" type="text/css" href="style.css" />
-	<link href="https://fonts.googleapis.com/css?family=Cutive|Cutive+Mono" rel="stylesheet" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
+  <head>
+    <meta charset="utf-8">
+    <title>Hello</title>
+	<link rel="stylesheet" type="text/css" href="/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Cutive|Cutive+Mono" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-	<script src="../textShuffle.js"></script>
-	<script src="../jquery.textShuffle.js"></script>
+	<script src="/textShuffle.js"></script>
+	<script src="/jquery.textShuffle.js"></script>
 	<script>
 $(function() {
   var textShuffle = $('.shuf').textShuffle();
   
-  // Remove me, it's an autoplay
+  // Remove para autoplay
   var play = function () {
     var chars = ['1 0 1 0', '█ ▓ ▒ ░', '01#/&%$?_-%*'];
     textShuffle.setChars(chars[Math.floor(Math.random() * 3 - 0.01)]);
@@ -23,52 +25,32 @@ $(function() {
   play();
 });
 	</script>
-</head>
-<body>
-
-	<section id="main">
+  </head>
+  <body>
+    <section id="main">
 	<header class="mainHeader">
-	<img src="images/sticker.png" />
-	<p><b>ARTUR_CABRAL</b> </p>
-	<p> *\louco com tendências tecnofilistas não passivas Lorem ipsum dolor sit amet consectetur adipiscing elit Integer aliquam risus ligula nec mattis ex sollicitudin sed. Vestibulum auctor diam ut enim tristique fringilla./*    Hover me to shuffle!
+	<a href="http://localhost:4000""><img src="/images/sticker.png">
+	<p><b>ARTUR_CABRAL</b> </p></a>
+	<p> *\<strike>louco com tendências tecnofilistas não passivas</strike> Designer e artista computacional, mestre em Arte e Tecnologia pela Universidade de Brasília</br> Tecnologia, interação e natureza são os fios condutores dos seus trabalhos ,que  vão desde software-art, instalações e objetos interativos /*
 </p>
-	<p>	<br />
+	<p>	<br>
 	<a href="">BIO</a>
 	<a href="">CV</a>
 	<a href="">TXT</a>
 
 	</p>
-	<p><br />	
+	<p><br>	
 	<a href="">arturcabral[at]gmail.com</a></p>
 	</header>
-	<content class="content">
+    <html>
+<content class="content">
 	
 	<div class="col-sm-4">
 	<div class="card">
 	
-	<img src="/images/thumbnail.png" style="height:200px;" align="center" />
+	<img src="/images/t-prece.png" style="height: 200px;" align="center" /> 
 	
 	<span style="height: 100px;writing-mode: vertical-rl;width: 10px;"><a style="text-decoration: none;" href="/2019/05/10/prece.html" class="shuf">Prece_</a></span>
-	<p><br /></p>
-	</div>
-	</div>
-	
-	<div class="col-sm-4">
-	<div class="card">
-	
-	<img src="/images/thumbnail.png" style="height: 200px;" align="center" /> 
-	
-	<span style="height: 100px;writing-mode: vertical-rl;width: 10px;"><a style="text-decoration: none;" href="/2019/05/10/ola-mundo.html" class="shuf">Olá mundo</a></span>
-	<p><br /></p>
-	</div>
-	</div>
-	
-	<div class="col-sm-4">
-	<div class="card">
-	
-	<img src="/images/thumbnail.png" style="height:200px;" align="center" />
-	
-	<span style="height: 100px;writing-mode: vertical-rl;width: 10px;"><a style="text-decoration: none;" href="/2019/05/10/ola-mundo-6.html" class="shuf">Olá mundo 6</a></span>
 	<p><br /></p>
 	</div>
 	</div>
@@ -126,6 +108,26 @@ $(function() {
 	<div class="col-sm-4">
 	<div class="card">
 	
+	<img src="/images/t-f-orquis.png" style="height: 200px;" align="center" /> 
+	
+	<span style="height: 100px;writing-mode: vertical-rl;width: 10px;"><a style="text-decoration: none;" href="/2019/05/10/f-orquis.html" class="shuf">F-ORCHIS_</a></span>
+	<p><br /></p>
+	</div>
+	</div>
+	
+	<div class="col-sm-4">
+	<div class="card">
+	
+	<img src="/images/thumbnail.png" style="height: 200px;" align="center" /> 
+	
+	<span style="height: 100px;writing-mode: vertical-rl;width: 10px;"><a style="text-decoration: none;" href="/2019/05/10/cyberflor.html" class="shuf">Cyberflor_</a></span>
+	<p><br /></p>
+	</div>
+	</div>
+	
+	<div class="col-sm-4">
+	<div class="card">
+	
 	<img src="/images/thumbnail.png" style="height:200px;" align="center" />
 	
 	<span style="height: 100px;writing-mode: vertical-rl;width: 10px;"><a style="text-decoration: none;" href="/2019/05/10/aura.html" class="shuf">Aura_</a></span>
@@ -134,13 +136,12 @@ $(function() {
 	</div>
 		   
 </content>
+</html>
 
 
-<footer class="mainFooter">FOOTER</footer>
-
+<!--   <footer class="mainFooter">FOOTER</footer>
+ -->
 </section>
 
 </body>
 </html>
-
-

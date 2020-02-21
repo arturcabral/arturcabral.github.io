@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-02-20T23:35:01-03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Prece_</title><link href="http://localhost:4000/2019/05/10/prece.html" rel="alternate" type="text/html" title="Prece_" /><published>2019-05-10T00:00:00-03:00</published><updated>2019-05-10T00:00:00-03:00</updated><id>http://localhost:4000/2019/05/10/prece</id><content type="html" xml:base="http://localhost:4000/2019/05/10/prece.html">&lt;h2 id=&quot;2018&quot;&gt;2018&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;description:&lt;/strong&gt; Block that displays names of missing persons. The list of names is fed by the twiiter. / Bloco o qual exibe nomes de pessoas desaparecidas. A lista de nomes é alimentada pelo twiiter.&lt;/p&gt;
+&lt;h3 id=&quot;microcomputer-and-dyed-plaster-block&quot;&gt;&lt;em&gt;microcomputer and dyed plaster block&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;instalação&lt;/strong&gt;
+&lt;img src=&quot;/images/prece.jpeg&quot; alt=&quot;My helpful screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;exibição&lt;/strong&gt;. - Exposição #2Retina (2017), &lt;em&gt;Museu Nacional de República, Brasília&lt;/em&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name></name></author><summary type="html">2018 description: Block that displays names of missing persons. The list of names is fed by the twiiter. / Bloco o qual exibe nomes de pessoas desaparecidas. A lista de nomes é alimentada pelo twiiter. microcomputer and dyed plaster block instalação</summary></entry><entry><title type="html">Cyberflor_</title><link href="http://localhost:4000/2019/05/10/cyberflor.html" rel="alternate" type="text/html" title="Cyberflor_" /><published>2019-05-10T00:00:00-03:00</published><updated>2019-05-10T00:00:00-03:00</updated><id>http://localhost:4000/2019/05/10/cyberflor</id><content type="html" xml:base="http://localhost:4000/2019/05/10/cyberflor.html">&lt;h2 id=&quot;2018&quot;&gt;2018&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;description:&lt;/strong&gt; Plant controls a 3D printer. / Uma planta controla uma impressora 3D, imprimindo o registro do encontro entre plantas e vidas artificiais.&lt;/p&gt;
+&lt;h3 id=&quot;autores-venturelli-s--hargreaves-p--ramos-tl-m&quot;&gt;&lt;strong&gt;autores&lt;/strong&gt; &lt;em&gt;VENTURELLI, S. / HARGREAVES, P. / RAMOS, T.L. M.&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;instalação&lt;/strong&gt;
+&lt;img src=&quot;/images/prece.jpeg&quot; alt=&quot;My helpful screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;exibição&lt;/strong&gt;. - Exposição #2Retina (2017), &lt;em&gt;Museu Nacional de República, Brasília&lt;/em&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name></name></author><summary type="html">2018 description: Plant controls a 3D printer. / Uma planta controla uma impressora 3D, imprimindo o registro do encontro entre plantas e vidas artificiais. autores VENTURELLI, S. / HARGREAVES, P. / RAMOS, T.L. M. instalação</summary></entry><entry><title type="html">F-ORCHIS_</title><link href="http://localhost:4000/2019/05/10/f-orquis.html" rel="alternate" type="text/html" title="F-ORCHIS_" /><published>2019-05-10T00:00:00-03:00</published><updated>2019-05-10T00:00:00-03:00</updated><id>http://localhost:4000/2019/05/10/f-orquis</id><content type="html" xml:base="http://localhost:4000/2019/05/10/f-orquis.html">&lt;h2 id=&quot;2019&quot;&gt;2019&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;description:&lt;/strong&gt; A mobile food stand, where a plant controls a custom 3d chocolate printer. / Um carrinho de comida, o qual plantas controlam uma impressora de chocolate.&lt;/p&gt;
+&lt;h3 id=&quot;autores-venturelli-s--hargreaves-p--ramos-tl-m&quot;&gt;&lt;strong&gt;autores&lt;/strong&gt; &lt;em&gt;VENTURELLI, S. / HARGREAVES, P. / RAMOS, T.L. M.&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;instalação&lt;/strong&gt;
+&lt;!-- ![My helpful screenshot](/images/prece.jpeg)
+ --&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;exibição&lt;/strong&gt;. - Exposição Internacional EmMeio#10.0 (2018) &lt;em&gt;Museu Nacional da República, Brasília&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name></name></author><summary type="html">2019 description: A mobile food stand, where a plant controls a custom 3d chocolate printer. / Um carrinho de comida, o qual plantas controlam uma impressora de chocolate. autores VENTURELLI, S. / HARGREAVES, P. / RAMOS, T.L. M. instalação exibição. - Exposição Internacional EmMeio#10.0 (2018) Museu Nacional da República, Brasília</summary></entry><entry><title type="html">Olá mundo</title><link href="http://localhost:4000/2019/05/10/ola-mundo-(c%C3%B3pia-1).html" rel="alternate" type="text/html" title="Olá mundo" /><published>2019-05-10T00:00:00-03:00</published><updated>2019-05-10T00:00:00-03:00</updated><id>http://localhost:4000/2019/05/10/ola-mundo%20(c%C3%B3pia%201)</id><content type="html" xml:base="http://localhost:4000/2019/05/10/ola-mundo-(c%C3%B3pia-1).html">&lt;h1 id=&quot;welcome&quot;&gt;Welcome&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Hello world&lt;/strong&gt;, this is my first Jekyll blog post.&lt;/p&gt;
+
+&lt;p&gt;I hope you like it!&lt;/p&gt;</content><author><name></name></author><summary type="html">Welcome</summary></entry><entry><title type="html">Olá mundo</title><link href="http://localhost:4000/2019/05/10/ola-mundo-(c%C3%B3pia-2).html" rel="alternate" type="text/html" title="Olá mundo" /><published>2019-05-10T00:00:00-03:00</published><updated>2019-05-10T00:00:00-03:00</updated><id>http://localhost:4000/2019/05/10/ola-mundo%20(c%C3%B3pia%202)</id><content type="html" xml:base="http://localhost:4000/2019/05/10/ola-mundo-(c%C3%B3pia-2).html">&lt;h1 id=&quot;welcome&quot;&gt;Welcome&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Hello world&lt;/strong&gt;, this is my first Jekyll blog post.&lt;/p&gt;
+
+&lt;p&gt;I hope you like it!&lt;/p&gt;</content><author><name></name></author><summary type="html">Welcome</summary></entry><entry><title type="html">Olá mundo</title><link href="http://localhost:4000/2019/05/10/ola-mundo-(c%C3%B3pia-3).html" rel="alternate" type="text/html" title="Olá mundo" /><published>2019-05-10T00:00:00-03:00</published><updated>2019-05-10T00:00:00-03:00</updated><id>http://localhost:4000/2019/05/10/ola-mundo%20(c%C3%B3pia%203)</id><content type="html" xml:base="http://localhost:4000/2019/05/10/ola-mundo-(c%C3%B3pia-3).html">&lt;h1 id=&quot;welcome&quot;&gt;Welcome&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Hello world&lt;/strong&gt;, this is my first Jekyll blog post.&lt;/p&gt;
+
+&lt;p&gt;I hope you like it!&lt;/p&gt;</content><author><name></name></author><summary type="html">Welcome</summary></entry><entry><title type="html">Olá mundo 4</title><link href="http://localhost:4000/2019/05/10/ola-mundo-4.html" rel="alternate" type="text/html" title="Olá mundo 4" /><published>2019-05-10T00:00:00-03:00</published><updated>2019-05-10T00:00:00-03:00</updated><id>http://localhost:4000/2019/05/10/ola-mundo-4</id><content type="html" xml:base="http://localhost:4000/2019/05/10/ola-mundo-4.html">&lt;h1 id=&quot;welcome&quot;&gt;Welcome&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Hello world&lt;/strong&gt;, this is my first Jekyll blog post.&lt;/p&gt;
+
+&lt;p&gt;I hope you like it!&lt;/p&gt;</content><author><name></name></author><summary type="html">Welcome</summary></entry><entry><title type="html">Olá mundo 5</title><link href="http://localhost:4000/2019/05/10/ola-mundo-5.html" rel="alternate" type="text/html" title="Olá mundo 5" /><published>2019-05-10T00:00:00-03:00</published><updated>2019-05-10T00:00:00-03:00</updated><id>http://localhost:4000/2019/05/10/ola-mundo-5</id><content type="html" xml:base="http://localhost:4000/2019/05/10/ola-mundo-5.html">&lt;h1 id=&quot;welcome&quot;&gt;Welcome&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Hello world&lt;/strong&gt;, this is my first Jekyll blog post.&lt;/p&gt;
+
+&lt;p&gt;I hope you like it!&lt;/p&gt;</content><author><name></name></author><summary type="html">Welcome</summary></entry><entry><title type="html">Aura_</title><link href="http://localhost:4000/2019/05/10/aura.html" rel="alternate" type="text/html" title="Aura_" /><published>2019-05-10T00:00:00-03:00</published><updated>2019-05-10T00:00:00-03:00</updated><id>http://localhost:4000/2019/05/10/aura</id><content type="html" xml:base="http://localhost:4000/2019/05/10/aura.html">&lt;h1 id=&quot;welcome&quot;&gt;Welcome&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Hello world&lt;/strong&gt;, this is my first Jekyll blog post.&lt;/p&gt;
+
+&lt;p&gt;I hope you like it!&lt;/p&gt;</content><author><name></name></author><summary type="html">Welcome</summary></entry></feed>

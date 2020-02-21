@@ -1,5 +1,61 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Olá mundo 5</title>
+	<link rel="stylesheet" type="text/css" href="/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Cutive|Cutive+Mono" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<script src="/textShuffle.js"></script>
+	<script src="/jquery.textShuffle.js"></script>
+	<script>
+$(function() {
+  var textShuffle = $('.shuf').textShuffle();
+  
+  // Remove para autoplay
+  var play = function () {
+    var chars = ['1 0 1 0', '█ ▓ ▒ ░', '01#/&%$?_-%*'];
+    textShuffle.setChars(chars[Math.floor(Math.random() * 3 - 0.01)]);
+    textShuffle.play();
+   play();
+  }
+  
+  play();
+});
+	</script>
+  </head>
+  <body>
+    <section id="main">
+	<header class="mainHeader">
+	<a href="http://localhost:4000""><img src="/images/sticker.png">
+	<p><b>ARTUR_CABRAL</b> </p></a>
+	<p> *\<strike>louco com tendências tecnofilistas não passivas</strike> Designer e artista computacional, mestre em Arte e Tecnologia pela Universidade de Brasília</br> Tecnologia, interação e natureza são os fios condutores dos seus trabalhos ,que  vão desde software-art, instalações e objetos interativos /*
+</p>
+	<p>	<br>
+	<a href="">BIO</a>
+	<a href="">CV</a>
+	<a href="">TXT</a>
+
+	</p>
+	<p><br>	
+	<a href="">arturcabral[at]gmail.com</a></p>
+	</header>
+    <div class="post">
+<h1>Olá mundo 5</h1>
+<!-- <p>10 May 2019 - </p>
+ -->
 <h1 id="welcome">Welcome</h1>
 
 <p><strong>Hello world</strong>, this is my first Jekyll blog post.</p>
 
 <p>I hope you like it!</p>
+
+</div>
+<!--   <footer class="mainFooter">FOOTER</footer>
+ -->
+</section>
+
+</body>
+</html>
