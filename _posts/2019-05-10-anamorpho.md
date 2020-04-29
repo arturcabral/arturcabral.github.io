@@ -1,7 +1,7 @@
 ---
 layout: obra
-title:  "Cyberflor_"
-thumbnail: /images/t-cyberflor.png
+title:  "ANAMORPHESOMA_ CHRONOSTOPOS"
+thumbnail: /images/t-anamorpho.png
 
 ---
 

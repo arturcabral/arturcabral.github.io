@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: obra
 title:  "Olá mundo"
 thumbnail: /images/thumbnail.png
 
