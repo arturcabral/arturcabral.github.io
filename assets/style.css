@@ -13,8 +13,37 @@
   }
   .card {
 			padding: 0 0 0 13em;
-
 		}
+	.post   {
+		width: 330% !important;
+	    padding-left: 6.5em;	
+	    font-size: 2em;
+	    padding-top: 0.5em;
+
+
+		}   
+	.post h2 {
+		font-size: 1em !important;
+	}
+	.post h3 {
+		font-size: 0.8em !important;
+	    color: #777;
+	    padding-left: 7em;
+	}
+	.post blockquote {
+		font-size: 0.9em !important;
+	    float: left !important;
+	    width: 18em !important;
+	    padding-top: 1em !important;
+	}
+	.post blockquote strong {
+		font-size: 1em !important;
+	}
+	.post img {
+    	padding: 0.5em 0 0em 0;
+    	width: 99% !important;
+
+	}
 } 
 
 
@@ -44,7 +73,7 @@
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 2em;
+  font-size: 2.3em;
   display: block;
   transition: 0.3s;
 }
