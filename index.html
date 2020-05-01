@@ -8,17 +8,39 @@ pagination:
 <html>
 <content class="content">
   {% for post in paginator.posts %}
-	<div class="col-sm-4">
-	<div class="card">
-	{% if post.thumbnail %}
-	<img src="{{ post.thumbnail }}" style="height: 200px;" align="center" /> 
-	{% else %}
-	<img src="/images/thumbnail.png" style="height:200px;" align="center" />
-	{% endif %}
-	<span style="height: 100px;writing-mode: vertical-rl;width: 10px;"><a style="text-decoration: none;" href="{{ BASE_PATH }}{{ post.url | remove: '/index.html' }}" class="shuf">{{ post.title }}</a></span>
-	<p><br></p>
-	</div>
-	</div>
+	<div class="col-sm-4 hidden-sm">
+		<div class="card">
+		{% if post.thumbnail %}
+		<img src="{{ post.thumbnail }}" style="height: 200px;" align="center" /> 
+		{% else %}
+		<img src="/images/thumbnail.png" style="height:200px;" align="center" />
+		{% endif %}
+		<span style="height: 100px;writing-mode: vertical-rl;width: 10px;"><a style="text-decoration: none;" href="{{ BASE_PATH }}{{ post.url | remove: '/index.html' }}" class="shuf">{{ post.title }}</a></span>
+		<p><br></p>
+		</div>
+		</div>
+	<!-- MOBILE -->
+	<div class="col-9 visible-sm">
+		<div class="card">
+		{% if post.thumbnail %}
+		<img src="{{ post.thumbnail }}" style="height: 600px;    padding-left: 3em;" align="center" /> 
+		{% else %}
+		<img src="/images/thumbnail.png" style="height:600px;" align="center" />
+		{% endif %}
+		<span style="    height: 200px;
+    height: 200px;
+    writing-mode: vertical-rl;
+    position: relative;
+    font-size: 2em;
+    float: left;
+    margin-top: -21.5em;
+        line-height: 1em;"><a style="text-decoration: none;" href="{{ BASE_PATH }}{{ post.url | remove: '/index.html' }}" class="shuf">{{ post.title }}</a></span>
+		<p><br></p>
+		</div>
+		</div>
+
+
+
 	{% endfor %}	   
 </content>
 </html>

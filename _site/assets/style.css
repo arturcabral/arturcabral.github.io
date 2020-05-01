@@ -1,4 +1,29 @@
 * {padding: 0; margin: 0;}
+/*MOBILE*/
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+ 
+ #main {
+    /*background-color: green;*/
+    grid-template-areas: "content content content content" "footer footer footer footer" !important;
+
+  }
+  .card {
+			padding: 0 0 0 13em;
+
+		}
+} 
+
+.menuMob {
+    z-index: 2;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    }
+/*FIM MOBILE*/
 
 
 		#main {
@@ -10,6 +35,7 @@
 			text-align: justify;
     		font-size: 14px;
     		color: #333333;
+
 
 
 		}
