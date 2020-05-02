@@ -35,16 +35,25 @@ $(function() {
 	<script>
 	function openNav() {
 	  document.getElementById("mySidenav").style.width = "250px";
+	  document.getElementById("myMenu").style.display = "none";
+
 	}
 
 	function closeNav() {
 	  document.getElementById("mySidenav").style.width = "0";
+	  document.getElementById("myMenu").style.display = "block";
+
 	}
 	</script>
 
 
 	<section class="menuMob visible-sm">
-		<a onclick="openNav()" ><img src="/images/sticker.png"></a>
+		<a onclick="openNav()" ><img width="150" src="/images/sticker.png">
+		<p id="myMenu"><b style="padding-left: 2.2em;
+    font-size: 2.5em;
+    line-height: 0px;">≡ </b> </p>
+		</a>
+
 	</section>
 	
 	<div id="mySidenav" class="sidenav">
@@ -52,7 +61,7 @@ $(function() {
 	  <a href="/">_home</a>
 	  <a href="/about">_bio</a>
 	  <a href="http://lattes.cnpq.br/9623673165147002" target="_blank">_cv</a>
-	  <a href="mailto:arturcabralreis@gmail.com" target="_blank">_call me</a>
+	  <a href="mailto:arturcabralreis@gmail.com" target="_blank">_email</a>
 
 	</div>
 

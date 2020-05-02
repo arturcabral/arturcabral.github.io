@@ -75,7 +75,7 @@
   left: 0;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 11em;
+  padding-top: 16em;
 }
 
 .sidenav a {
@@ -88,8 +88,8 @@
 
 .sidenav .closebtn {
   position: absolute;
-  top: 0;
-  right: 80px;
+  top: 178px;
+  right: 135px;
   font-size: 50px;
   margin-left: 50px;
 }
