@@ -1,7 +1,7 @@
 var canvas;
 let cidades = [];
 let casos;
-let obtos;
+let obitos;
 let dados;
 var osc;
 var playing = true;
@@ -107,7 +107,7 @@ function draw() {
 		text(dadosCidade[i], 70, 100);
 		text(dadosEstado[i], 30, 80);
 	 	text("casos/100k " + dadosPerhabit[i].toString(), 30, 60);
-	 	text("óbtos " + dadosMortes[i].toString(), 30, 40);
+	 	text("óbitos " + dadosMortes[i].toString(), 30, 40);
 		}
 		catch (e) {}
 	
