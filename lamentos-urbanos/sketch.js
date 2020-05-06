@@ -196,7 +196,7 @@ function notas(interador) {
 		circulo.fill(casoPer100, 100 , 100);
 		//hue max 360 min 85 
 		//circulo.ellipse(250, 250, 250, 250);
-		circulo.ellipse(250 + random(-30, 30) , 200 + random(-30, 30) , 200, 200);
+		circulo.ellipse(width/2 + random(-30, 30) , height/2 + random(-30, 30) , 300, 300);
 	//console.log(plantaM , "planta " , planta);
 
 	}
@@ -204,12 +204,12 @@ function notas(interador) {
 			let mortes = map(dadosMortes[interador], 0, 1801, 85, 360);
 
 			circulo.fill(mortes, 100 , 100);
-			circulo.ellipse(250 + random(-30, 30) , 200 + random(-30, 30) , 200, 200);
+			circulo.ellipse(width/2 + random(-30, 30) , height/2 + random(-30, 30) , 300, 300);
 	}
 
 	function circulosPop(interador) {
 			let populacao = map(dadosPopulacao[interador], 0, 12252023, 0, 360);
 
 			circulo.fill(populacao, 100 , 100);
-			circulo.ellipse(250 + random(-30, 30) , 200 + random(-30, 30) , 200, 200);
+			circulo.ellipse(width/2 + random(-30, 30) , height/2 + random(-30, 30) , 300, 300);
 	}
