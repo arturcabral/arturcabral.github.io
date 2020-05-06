@@ -51,19 +51,14 @@ function draw() {
 	estadoSom = true;
 	
 	if (ativo == true) {
-	background(255);
+		background(255);
 	text("INICIANDO...", 250, 100);
-	text("POR FAVOR AGUARDE", 250, 120);
 
 
-
-	
+	i ++;
 	
 
 	chamajson(page);
-	page = int(random(54))
-	i = int(random(999));
-
 
 	try {
 	dadoGeral = Object.values(dados);
@@ -82,7 +77,18 @@ function draw() {
 		dadosEstado[i] = dadoGeral[i].state;
 		dadosPopulacao[i] = dadoGeral[i].estimated_population_2019;
 		
-		print("numero " + i + " paginas " + page);
+
+		if ( i == (dadoGeral.length -1)) {
+			if (page == 54) {
+				page = 1;
+				print(" ####### FIM DAS PAGINA");
+
+			}
+			print(" ####### MUDOU DE PAGINA ");
+			page ++
+			i = 0 ;
+		}
+		//print(i , dadosCidade[i], dadosEstado[i], dadosMortes[i], dadosPerhabit[i]);
 		oscilador(i);
 		estadoSom = true;
 		circulo.background(255);
