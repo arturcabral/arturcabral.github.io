@@ -29,9 +29,9 @@ function gotData(data) {
 }
 
 function setup() {
-	canvas = createCanvas(1080, 720);
-	circulo = createGraphics(1080, 720);
-	texto = createGraphics(800,600);
+	canvas = createCanvas(windowWidth, windowHeight);
+	circulo = createGraphics(windowWidth, windowHeight);
+	texto = createGraphics(windowWidth, windowHeight);
 	circulo.colorMode(HSB, 360, 100, 100);
 	circulo.noStroke();
 	osc = new p5.Oscillator();
