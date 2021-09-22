@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>artur | {{ page.title }}</title>
+	<link rel="stylesheet" type="text/css" href="/assets/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<script src="/assets/textShuffle.js"></script>
+	<script src="/assets/jquery.textShuffle.js"></script>
+  </head>
+  
+  <body>
+    <section id="main">
+	
+	<!-- MOBILE -->
+
+	<script>
+	function openNav() {
+	  document.getElementById("mySidenav").style.width = "250px";
+	  document.getElementById("myMenu").style.display = "none";
+
+	}
+
+	function closeNav() {
+	  document.getElementById("mySidenav").style.width = "0";
+	  document.getElementById("myMenu").style.display = "block";
+
+	}
+	</script>
+
+
+	<section class="menuMob visible-sm">
+		<a onclick="openNav()" ><img width="150" src="/images/sticker.png">
+		<p id="myMenu"><b style="padding-left: 2.2em;
+    font-size: 2.5em;
+    line-height: 0px;">≡ </b> </p>
+		</a>
+
+	</section>
+	
+	<div id="mySidenav" class="sidenav">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <a href="/">home</a>
+	  <a href="/sobre">bio</a>
+	  <a href="http://lattes.cnpq.br/9623673165147002" target="_blank">cv</a>
+	  <a href="/textos">txt</a>
+	  <a href="mailto:arturcabralreis@gmail.com" target="_blank">email</a>
+
+
+	</div>
+
+	<!-- END-MOBILE -->
+
+
+	<!-- BIG-SCREEN -->
+
+	
+	<header class="mainHeader menu hidden-sm">
+	<a href="/"  target="_blank">HOME</a>
+	<a href="https://forms.gle/BQDcgBpurMV7fyHg7"  target="_blank">Ficha de Inscrição</a>
+		<a href="https://docs.google.com/document/d/1pllCtbWV4cm0xsJm4b9exeCre2UAv5_yNHe4lyk4z_I/edit?usp=sharing"  target="_blank">Projeto Completo</a>
+
+	</header>
+    
+   
+<content class="content">
+	<div class="post">
+		<a href="/" ><img src="/images/logo-vive.png"></a>
+
+
+	{{ content }}
+	</div>
+</content>
+
+ 
+ <footer class="mainFooter">202X © Artur Cabral | <a href="https://www.instagram.com/artuurcabral/" target="_blank">instagram</a>  <a href="https://github.com/arturcabral" target="_blank">github</a>
+ </footer>
+</section>
+
+</body>
+</html>
