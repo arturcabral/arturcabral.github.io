@@ -32,6 +32,12 @@ github_username:  jekyll
 # Build settings
 theme: minima
 plugins:
+  - jekyll-paginate
+
+collections:
+  obras:
+    output: true
+    permalink: ":title/index.html"
   - jekyll-feed
 
 # Exclude from processing.
@@ -53,3 +59,10 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+############################################################
+# Site configuration for the Jekyll 3 Pagination Gem
+# The values here represent the defaults if nothing is set
+
+gems: [jekyll-paginate]
+paginate: 9
+############################################################
