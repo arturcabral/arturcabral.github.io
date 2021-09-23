@@ -46,9 +46,9 @@ Os estudantes habilitados para participar do projeto serão comunicados logo ap�
 
 ATIVIDADES | DIAS
 --------- | ------
-Inscrição (via formulário)      	 &nbsp; | 13/10
-Resultado da Seleção   	 | 20/10
-Início do Projeto   	 | 01/11
+Inscrição (via formulário)      	 &nbsp; | 13/10 - 17/10
+Resultado da Seleção   	 | 19/10
+Início do Projeto   	 | 26/10
 
 
 <br><br><br>
