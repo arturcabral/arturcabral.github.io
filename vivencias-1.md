@@ -3,7 +3,7 @@ layout: vivencias
 title: Vicências Tecno-Criativas
 ---
 
-## O primeira edição do Projeto Vivências Tecno-criativas teve por  propósito ser uma imersão criativa para jovens da rede pública de ensino na cidade do Gama-DF, com foco na experimentação com ferramentas tecnológicas de novas mídias. Conseguimos atender 4 estudantes do  Centro Educacional 8 do Gama (CED 8), totalizando 150 horas de atividades.
+## A primeira edição do Projeto Vivências Tecno-criativas teve por  propósito ser uma imersão criativa para jovens da rede pública de ensino na cidade do Gama-DF, com foco na experimentação com ferramentas tecnológicas de novas mídias. Conseguimos atender 4 estudantes do  Centro Educacional 8 do Gama (CED 8), totalizando 150 horas de atividades.
 
 <h4> <a href="/vivencias/calendário.pdf" target="_blank">Calendário</a>
 </h4>
