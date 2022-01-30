@@ -1,5 +1,5 @@
 ---
-layout: blank
+layout: vivencias
 title: Vicências Tecno-Criativas
 ---
 
