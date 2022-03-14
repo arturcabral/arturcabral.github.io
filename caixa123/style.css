@@ -1,0 +1,189 @@
+@font-face {font-family: "Decima Mono Pro"; src: url("http://db.onlinewebfonts.com/t/a57898f1c888d0b61730477a1c77974a.eot"); src: url("http://db.onlinewebfonts.com/t/a57898f1c888d0b61730477a1c77974a.eot?#iefix") format("embedded-opentype"), url("http://db.onlinewebfonts.com/t/a57898f1c888d0b61730477a1c77974a.woff2") format("woff2"), url("http://db.onlinewebfonts.com/t/a57898f1c888d0b61730477a1c77974a.woff") format("woff"), url("http://db.onlinewebfonts.com/t/a57898f1c888d0b61730477a1c77974a.ttf") format("truetype"), url("http://db.onlinewebfonts.com/t/a57898f1c888d0b61730477a1c77974a.svg#Decima Mono Pro") format("svg"); }
+a {
+  text-decoration: none;
+  color: #000;
+}
+html, body {
+  font-family: "Decima Mono Pro", Mono;
+  margin: 0;
+  padding: 0;
+}
+.popup {
+    position: relative;
+    margin: 0 auto;
+    top: 25%;
+    width: 500px;
+    height: 200px;
+    background: #ccc;
+    z-index: 9999;
+}
+.popup a {
+  size: 15px;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.popup a:hover {
+  color: #000;
+  background: #fff;
+}
+.popup p {
+  padding: 20px;
+  font-size: 10pt;
+  text-align: justify;
+}
+
+.sidebar {
+  width: 15%;
+  height: 100%;
+/*  background: #ccc;
+*/  float: left;
+}
+.sidebar img {
+  padding: 20px 20px 40px;
+
+}
+.sidebar ul {
+  margin: 0;
+  padding: 0 20px 0;
+}
+.sidebar li {
+  text-decoration: none;
+  list-style-type: none;
+}
+.sidebar a:hover {
+background: #000;
+color: #fff;
+}
+
+.maps {
+  /*background: #000;*/
+  width: 85%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.img-container {
+  overflow: hidden;
+  /*background: #000;*/
+  width: 85%;
+  height: 100%;
+  float: right;
+
+}
+
+.img {
+  position: absolute;
+  width: 320px;
+  height: 240px;
+}
+.img p {
+  margin: 0;
+  padding: 0;
+  outline-width: 2px;
+  background: #fff;
+  outline-style: solid;
+}
+
+.um {
+  background-image: url("images/box-1.jpg");
+  background-size: cover;
+  height: 400px;
+  width: 300px;
+  z-index: 9;
+  top: 112px;
+  left: 1004px;
+
+}
+.dois {
+  background-image: url("images/box-2.jpg");
+  background-size: cover;
+  height: 320px;
+  width: 480px;
+  z-index: 7;
+  top: 420px;
+  left: 601px;
+
+}
+.tres {
+  background-image: url("images/box-3.jpg");
+  background-size: cover;
+  height: 320px;
+  width: 480px;
+  z-index: 8;
+  top: 202px;
+  left: 584px;
+
+}
+.quatro {
+  background-image: url("images/box-4.jpg");
+  background-size: cover;
+  height: 320px;
+  width: 480px;
+  z-index: 6;
+  top: 68px;
+  left: 569px;
+
+}
+
+.cinco {
+  background-image: url("images/box-5.jpg");
+  background-size: cover;
+  height: 225px;
+  width: 400px;
+  z-index: 5;
+  top: 40px;
+  left: 813px;
+}
+
+.seis {
+  background-image: url("images/box-6.jpg");
+  background-size: cover;
+  height: 480px;
+  width: 320px;
+  z-index: 4;
+  top: 42px;
+  left: 867px;
+}
+.sete {
+  background-image: url("images/box-7.jpg");
+  background-size: cover;
+  height: 400px;
+  width: 202px;
+  z-index: 3;
+  top: 293px;
+  left: 508px;
+}
+.oito {
+  background-image: url("images/box-8.jpg");
+  background-size: cover;
+  height: 480px;
+  width: 320px;
+  z-index: 2;
+  top: 137px;
+  left: 919px;
+}
+
+.nove {
+  background-image: url("images/box-9.jpg");
+  background-size: cover;
+  height: 225px;
+  width: 400px;
+  z-index: 1;
+  top: 209px;
+  left: 347px;
+}
+
+.bottom {
+  font-size: 10pt;
+  font-weight: bold;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}

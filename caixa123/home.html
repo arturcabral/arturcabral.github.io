@@ -1,0 +1,71 @@
+<head>
+	<link href="style.css" rel="stylesheet">
+	<title>CASA123</title>
+</head>
+
+<body>
+
+	<div class="sidebar">
+		<img src="images/logo.svg">
+		<ul>
+			<li><a href="home.html">local</a></li>
+			<li><a href="ecos.html">ecossistena</a></li>
+			<li>paisagem sonora</li>
+			<li><a>ponto de contato</a></li>
+
+		</ul>
+	</div>
+	<script language="JavaScript" type="text/javascript">
+function login(showhide){
+if(showhide == "show"){
+    document.getElementById('tab2').style.display ="block";
+
+}else if(showhide == "close"){
+    document.getElementById('popupbox').style.visibility="hidden"; 
+}else if(showhide == "2"){
+    document.getElementById('tab2').style.display ="block";
+    document.getElementById('tab1').style.display ="none"; 
+}
+else if(showhide == "1"){
+    document.getElementById('tab2').style.display ="none";
+    document.getElementById('tab1').style.display ="block"; 
+}
+
+}
+</script>
+
+<div id="popupbox" class="popup">
+  <a href="javascript:login('close');"><img src="images/x.svg" width="15px"></a>
+
+<a href="javascript:login('1');">1</a>
+<a href="javascript:login('2');">2</a>
+
+  <div id="tab1"> 
+  <p> A chegada de um visitante ao espaço e um novo nó na nossa rede, é sempre comemorada com presentes, ofertados pelos actantes desse emaranhado reticular ao qual faço parte.  Pedimos para que cada feirante ofertasse objeto que se relacionasse com você, como em um ato de disponibilidade de acolhimento,  até o momento só te conhecem através da sua fotografia do whatsapp.</p>
+  </div> 
+  
+  <div id="tab2" style="display: none;">
+    <p> É impossível entrar na caixa123 sem entrar no organismo que a comporta, um organismo dinâmico formado por pequenas redes dentro de caixas, de forma recursiva. Aqui na caixa 123 temos buscado sempre novos arranjos entre os múltiplos organismos, sejam humanos ou não. Fique a vontade para descompactar esse solo e descobrir essa rede.  
+ </p>
+  </div>
+
+ 
+</div>
+
+	<div class="img-container">
+  		<div class="img um"> <p><img src="images/x.svg" width="15px"></p></div>
+  		<div class="img dois"><p><img src="images/x.svg" width="15px"></p></div>
+  		<div class="img tres"><p><img src="images/x.svg" width="15px"></p></div>
+  		<div class="img quatro"><p><img src="images/x.svg" width="15px"></p></div>
+  		<div class="img cinco"><p><img src="images/x.svg" width="15px"></p></div>
+  		<div class="img seis"><p><img src="images/x.svg" width="15px"></p></div>
+  		<div class="img sete"><p><img src="images/x.svg" width="15px"></p></div>
+  		<div class="img oito"><p><img src="images/x.svg" width="15px"></p></div>
+  		<div class="img nove"><p><img src="images/x.svg" width="15px"></p></div>
+	</div>
+	<div class="bottom">março de 2022</div>
+	<div id="log"></div>
+
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="stack.js"></script>
+
+</body>
