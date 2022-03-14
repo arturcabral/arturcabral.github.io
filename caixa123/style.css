@@ -1,12 +1,8 @@
-@font-face {font-family: "Decima Mono Pro"; src: url("http://db.onlinewebfonts.com/t/a57898f1c888d0b61730477a1c77974a.eot"); src: url("http://db.onlinewebfonts.com/t/a57898f1c888d0b61730477a1c77974a.eot?#iefix") format("embedded-opentype"), url("http://db.onlinewebfonts.com/t/a57898f1c888d0b61730477a1c77974a.woff2") format("woff2"), url("http://db.onlinewebfonts.com/t/a57898f1c888d0b61730477a1c77974a.woff") format("woff"), url("http://db.onlinewebfonts.com/t/a57898f1c888d0b61730477a1c77974a.ttf") format("truetype"), url("http://db.onlinewebfonts.com/t/a57898f1c888d0b61730477a1c77974a.svg#Decima Mono Pro") format("svg"); }
-a {
-  text-decoration: none;
-  color: #000;
-}
 html, body {
-  font-family: "Decima Mono Pro", Mono;
-  margin: 0;
+  font-family: 'Roboto Mono', monospace;  margin: 0;
   padding: 0;
+  color: #000;
+
 }
 .popup {
     position: relative;
