@@ -1,0 +1,48 @@
+<head>
+  <link href="style.css" rel="stylesheet">
+  <title>PAISAGEM</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="sidebar">
+    <img src="images/logo.svg">
+    <ul>
+      <li><a href="home.html">local</a></li>
+      <li><a href="ecos.html">ecossistena</a></li>
+      <li><a href="paisagem.html">paisagem sonora</li>
+      <li><a>ponto de contato</a></li>
+
+    </ul>
+  </div>
+<div class="paisagem">
+  <div id="status"></div>
+<audio controls="controls" autoplay="autoplay">
+<source src="http://caixa123.duckdns.org:3032/caixalive" type="audio/mp3" preload="auto"/>
+Your browser does not support the audio element.
+</audio>
+</div>
+  
+
+<script type="text/javascript">
+  function checkOnline(url, error, ok) {
+    try {
+        var scriptElem = document.createElement('script');
+        scriptElem.type = 'text/javascript';
+        scriptElem.onerror = function(){error();};
+        scriptElem.onload = function(){ok();};
+        scriptElem.src = url;
+        document.getElementsByTagName("body")[0].appendChild(scriptElem);
+    } catch(err) {
+        error(err);
+    }
+};
+  checkOnline('http://caixa123.duckdns.org:3032', function() {document.getElementById("status").innerHTML = "<p style='color: red;''>offline</p>";}, function(){document.getElementById("status").innerHTML = "<p style='color: green;''>online</p>";
+});
+</script>
+  <div class="bottom">março de 2022</div>
+
+

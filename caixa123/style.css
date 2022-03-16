@@ -8,6 +8,10 @@ html, body {
   color: #000;
 
 }
+.paisagem {
+  padding-left: 15em;
+  padding-top: 1em;
+}
 .popup {
     position: relative;
     margin: 0 auto;
