@@ -1,5 +1,5 @@
 ---
 layout: solAPI
-title: SOL API2
+title: SOL API
 ---
 
