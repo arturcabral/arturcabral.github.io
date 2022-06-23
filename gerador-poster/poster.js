@@ -71,7 +71,7 @@ var elem = document.documentElement;
 		console.log("Getting Poster");
 		
 	
-	doGet('https://api.themoviedb.org/3/search/movie?api_key=b22d8d39515f3aaf92c6a71ad59eea95&language=en-US&query=' + movieName +'&page=1&include_adult=false').then((response) => {
+	doGet('https://api.themoviedb.org/3/search/movie?api_key=MEUAPIKEY&language=en-US&query=' + movieName +'&page=1&include_adult=false').then((response) => {
 		console.log(response);
 		urlposter = 'https://image.tmdb.org/t/p/original' + response.results[0].poster_path;
 		
