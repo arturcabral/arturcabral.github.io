@@ -26,7 +26,7 @@ function setup() {
 	createCanvas(window.innerWidth, window.innerHeight);
 	createGraphics(window.innerWidth, window.innerHeight);
 	background(51);
-	loadJSON('https://api.openweathermap.org/data/2.5/weather?lat=-16.01159783662048&lon=-48.06873001796087&appid=4dfbf7b221d785f41ac1a9b7d9447cb7', gotData);
+	loadJSON('link com token', gotData);
 
 
 }
