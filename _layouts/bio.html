@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Em-formação</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: monospace;
+        }
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: center; /* Centraliza verticalmente */
+            height: 100vh;
+        }
+        .main-container {
+            display: flex;
+            justify-content: space-between; /* Espaço entre os elementos */
+            align-items: center; /* Centraliza verticalmente */
+            width: 70%; /* Largura da parte principal (70% da página) */
+        }
+        .svg-container {
+            position: relative;
+        }
+        .svg-geral {
+            width: 100%;
+        }
+        .text-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #F05A24;
+            color: black; /* Cor do texto */
+            padding: 5px; /* Espaçamento interno do texto */
+            font-size: 22pt;
+            transform: translate(-50%, -50%); /* Centraliza horizontal e verticalmente */
+            top: 50%;
+            left: 120%;
+        }
+        .red-line {
+           position: absolute;
+            left: 95%;
+            top: 50%;
+            width: 100px; /* Largura da linha */
+            height: 2px; /* Altura igual à altura da .text-overlay */
+            background-color: #F05A24;
+        }
+        img {
+            width: 100%; /* Largura da imagem igual à largura do pai (.svg-geral) */
+        }
+        .vertical-text {
+            writing-mode: vertical-rl; /* Texto vertical */
+            text-align: center; /* Centraliza verticalmente */
+            transform: rotate(180deg); /* Rotaciona o texto em 180 graus */
+            white-space: nowrap; /* Evita quebra de linha */
+            position: absolute;
+            left: 10%;
+            color: white;
+            font-size: 14pt;
+            bottom: 15%;
+        }
+        .list-text {
+            background-color: rgba(0, 0, 0, 0.7); /* Cor de fundo do texto */
+            color: #F05A24; /* Cor do texto */
+            padding: 10px; /* Espaçamento interno do texto */
+            font-size: 16px;
+            text-align: left; /* Alinha o texto à esquerda */
+            position: absolute;
+            left: 80%;
+            bottom: 20%;
+            padding-left: 20px;
+
+        }
+        .list-text li {
+          list-style: "+";
+          position: relative;
+          padding: 15px;
+        }
+        .list-text ul li::before {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: -30px;
+          width: 110%; /* Termina o sublinhado a 80% do texto */
+          height: 1px; /* Altura do sublinhado */
+          background-color: #F05A24; /* Cor do sublinhado */
+      }
+        .list-text a {
+          text-decoration: none;
+          color: #F05A24;
+        }
+       
+    </style>
+    <script src="/assets/chamar-dados.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    // Função para posicionar a parte inferior direita de um elemento na posição do mouse
+function positionElementAtMouse(event, element, width, height) {
+    const mouseX = event.clientX;
+    const mouseY = event.clientY;
+    const offsetX = 10; // Ajuste a posição horizontal
+    const offsetY = 10; // Ajuste a posição vertical
+
+    const left = mouseX - width + offsetX + 'px'; // Ajuste para posicionar a parte inferior direita
+    const top = mouseY - height + offsetY + 'px'; // Ajuste para posicionar a parte inferior direita
+
+    element.style.left = left;
+    element.style.top = top;
+}
+
+// Função para exibir o iframe quando o mouse passa sobre um item da lista
+function showIframe(event) {
+    const iframe = document.createElement('iframe');
+    iframe.src = 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3839.8019238889547!2d-47.8743728!3d-15.7616143!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a398265a2d027%3A0x9431d651ab4c1104!2sUniversidade%20de%20Bras%C3%ADlia!5e0!3m2!1spt-BR!2sbr!4v1695954077073!5m2!1spt-BR!2sbr';
+    iframe.style.width = '600px';
+    iframe.style.height = '450px';
+    iframe.style.position = 'fixed';
+    iframe.style.pointerEvents = 'none'; // Impede que o iframe responda aos eventos de mouse
+
+    document.body.appendChild(iframe);
+
+    // Posiciona a parte inferior direita do iframe na posição do mouse
+    positionElementAtMouse(event, iframe, 600, 450);
+
+    // Remove o iframe quando o mouse sai do item da lista
+    event.target.addEventListener('mouseleave', () => {
+        document.body.removeChild(iframe);
+    });
+}
+
+
+
+// Função para exibir a imagem quando o mouse passa sobre um item da lista
+function showImage(event) {
+    const image = document.createElement('img');
+    image.src = '/assets/jamelao.png'; // Substitua pelo caminho da imagem desejada
+    image.style.width = '343px';
+    image.style.height = '500px';
+    image.style.position = 'fixed';
+    image.style.pointerEvents = 'none'; // Impede que a imagem responda aos eventos de mouse
+
+    document.body.appendChild(image);
+
+    // Posiciona a parte inferior direita da imagem na posição do mouse
+    positionElementAtMouse(event, image, 343, 500);
+
+    // Remove a imagem quando o mouse sai do item da lista
+    event.target.addEventListener('mouseleave', () => {
+        document.body.removeChild(image);
+    });
+}
+
+// Função para exibir a caixa de texto quando o mouse passa sobre um item da lista
+function showTextBox(event) {
+    const textBox = document.createElement('div');
+    textBox.style.backgroundColor = 'black';
+    textBox.style.color = 'white';
+    textBox.style.padding = '20px';
+    textBox.style.width = '400px';
+    textBox.style.height = '170px';
+    textBox.style.textAlign = 'justify';
+    textBox.style.border = '1px solid white';
+    textBox.style.position = 'fixed';
+    textBox.style.pointerEvents = 'none'; // Impede que a caixa de texto responda aos eventos de mouse
+
+    textBox.innerHTML = '<p>Neste experimento, observamos uma convergência intrigante entre o registro em gravura dos anéis de crescimento de uma árvore, que representam uma manifestação do tempo agenciada pelo meio, e os dados digitais obtidos de uma estação meteorológica, os quais se tornam entidades digitais concretas a partir de fenômenos,  pertencente a uma outra temporalidade. Essa convergência nos permite não apenas apreciar tal acoplamento, mas também reconhecer a singularidade dessas "coisas" outras, evidenciando a complexa relação entre as suas diversas naturezas.</p>';
+
+    document.body.appendChild(textBox);
+
+    // Posiciona a parte inferior direita da caixa de texto na posição do mouse
+    positionElementAtMouse(event, textBox, 400, 170);
+
+    // Remove a caixa de texto quando o mouse sai do item da lista
+    event.target.addEventListener('mouseleave', () => {
+        document.body.removeChild(textBox);
+    });
+}
+
+
+
+    </script>
+</head>
+<body>
+    <div class="main-container">
+        <div class="svg-container">
+            <div class="svg-geral" id="svg-novo">
+  <!--               <svg id="digital" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 343 185" style="enable-background:new 0 0 343 185;" xml:space="preserve" width="100%">
+            <style>
+            textPath {
+              fill: white;
+              font-size: 8px;
+            }
+          </style>
+            <path id="st0" fill="none" stroke="none" d="M68.5,48.8C97,23.6,134.4,8.3,175.4,8.3c89.1,0,161.2,72.2,161.2,161.2c0,5.9-0.3,11.7-0.9,17.4"/>
+            <path id="st1" fill="none" stroke="none" d="M15.1,186.9c-0.6-5.7-0.9-11.5-0.9-17.4c0-40.2,14.7-76.9,39-105.2"/>
+            <path id="st2" fill="none" stroke="none" d="M320,161.4c0.6,5.5,0.9,11.1,0.9,16.7c0,2.9-0.1,5.8-0.2,8.7"/>
+            <path id="st3" fill="none" stroke="none" d="M33.4,187.4c-0.2-3.1-0.3-6.2-0.3-9.3C33.1,94.8,97.5,27.3,177,27.3c66.2,0,121.9,46.8,138.7,110.5"/>
+            <path id="st4" fill="none" stroke="none" d="M69,109.3c21-37,60.8-62,106.4-62c67.5,0,122.2,54.7,122.2,122.3c0,5.8-0.4,11.6-1.2,17.2"/>
+            <path id="st5" fill="none" stroke="none" d="M54.3,186.9c-0.8-5.7-1.2-11.4-1.2-17.3c0-14.5,2.5-28.3,7.1-41.2"/>
+            <path id="st6" fill="none" stroke="none" d="M73.2,187.2c0-1.3-0.1-2.6-0.1-4c0-64.1,46.5-116,103.9-116s103.9,51.9,103.9,116c0,1.4,0,2.7-0.1,4.1"/>
+            <path id="st7" fill="none" stroke="none" d="M94.3,187c-0.1-2.1-0.2-4.2-0.2-6.3c0-51,37.7-92.4,84.1-92.4s84.1,41.4,84.1,92.4c0,2.2-0.1,4.4-0.2,6.6"/>
+            <path id="st8" fill="none" stroke="none" d="M115.6,187c-0.3-2.7-0.4-5.4-0.4-8.2c0-38.4,28.2-69.5,62.9-69.5s62.9,31.1,62.9,69.5c0,2.9-0.2,5.8-0.5,8.6"
+              />
+            <path id="st9" fill="none" stroke="none" d="M216.5,160.2c1.8,5.5,2.8,11.5,2.8,17.8c0,3.2-0.3,6.3-0.8,9.4"/>
+            <path id="st10" fill="none" stroke="none" d="M139.3,154.4c7.2-15.4,21.3-25.9,37.5-25.9c11.1,0,21.2,4.9,28.8,13"/>
+            <path id="st11" fill="none" stroke="none" d="M159.3,187.4c-4.8-4.4-7.9-10.7-7.9-17.8c0-6.8,2.9-13,7.4-17.4"/>
+            <path id="st12" fill="none" stroke="none" d="M185,151.9c8.9,4.4,15.3,12.4,16.7,22.3c0.7,4.6,0.2,9-1.3,13.2"/>
+    
+            <text>
+              <textPath id="st0" href="#st0" side="left" startOffset="0%">Teste 
+                <!-- <animate attributeName="startOffset" from="0%" to="50%" begin="0s" dur="5s" repeatCount="indefinite"></animate> -->
+              </textPath>
+              <textPath href="#st1" side="left" startOffset="0%">Quick brown fox jumps over the lazy dog.Quick brown fox jumps over the lazy dog.
+                <!-- <animate attributeName="startOffset" from="0%" to="50%" begin="0s" dur="5s" repeatCount="indefinite"></animate> -->
+              </textPath>
+              <textPath href="#st2" side="left" startOffset="0%">Quick brown fox jumps over the lazy dog.Quick brown fox jumps over the lazy dog.
+                <!-- <animate attributeName="startOffset" from="0%" to="50%" begin="0s" dur="5s" repeatCount="indefinite"></animate> -->
+              </textPath>
+              <textPath href="#st3" side="left" startOffset="0%">Quick brown fox jumps over the lazy dog.Quick brown fox jumps over the lazy dog.
+                <!-- <animate attributeName="startOffset" from="0%" to="50%" begin="0s" dur="5s" repeatCount="indefinite"></animate> -->
+              </textPath>
+              <textPath href="#st4" side="left" startOffset="0%">Quick brown fox jumps over the lazy dog.Quick brown fox jumps over the lazy dog.
+                <!-- <animate attributeName="startOffset" from="0%" to="50%" begin="0s" dur="5s" repeatCount="indefinite"></animate> -->
+              </textPath>
+              <textPath href="#st5" side="left" startOffset="0%">Quick brown fox jumps over the lazy dog.Quick brown fox jumps over the lazy dog.
+                <!-- <animate attributeName="startOffset" from="0%" to="50%" begin="0s" dur="5s" repeatCount="indefinite"></animate> -->
+              </textPath>
+              <textPath href="#st6" side="left" startOffset="0%">Quick brown fox jumps over the lazy dog.Quick brown fox jumps over the lazy dog.
+                <!-- <animate attributeName="startOffset" from="0%" to="50%" begin="0s" dur="5s" repeatCount="indefinite"></animate> -->
+              </textPath>
+              <textPath href="#st7" side="left" startOffset="0%">Quick brown fox jumps over the lazy dog.Quick brown fox jumps over the lazy dog.
+                <!-- <animate attributeName="startOffset" from="0%" to="50%" begin="0s" dur="5s" repeatCount="indefinite"></animate> -->
+              </textPath>
+              <textPath href="#st8" side="left" startOffset="0%">Quick brown fox jumps over the lazy dog.Quick brown fox jumps over the lazy dog.
+                <!-- <animate attributeName="startOffset" from="0%" to="50%" begin="0s" dur="5s" repeatCount="indefinite"></animate> -->
+              </textPath>
+              <textPath href="#st9" side="left" startOffset="0%">Quick brown fox jumps over the lazy dog.Quick brown fox jumps over the lazy dog.
+                <!-- <animate attributeName="startOffset" from="0%" to="50%" begin="0s" dur="5s" repeatCount="indefinite"></animate> -->
+              </textPath>
+              <textPath href="#st10" side="left" startOffset="0%">Quick brown fox jumps over the lazy dog.Quick brown fox jumps over the lazy dog.
+                <!-- <animate attributeName="startOffset" from="0%" to="50%" begin="0s" dur="5s" repeatCount="indefinite"></animate> -->
+              </textPath>
+              <textPath href="#st11" side="left" startOffset="0%">Quick brown fox jumps over the lazy dog.Quick brown fox jumps over the lazy dog.
+                <!-- <animate attributeName="startOffset" from="0%" to="50%" begin="0s" dur="5s" repeatCount="indefinite"></animate> -->
+              </textPath>
+              <textPath href="#st12" side="left" startOffset="0%">Quick brown fox jumps over the lazy dog.Quick brown fox jumps over the lazy dog.
+                <!-- <animate attributeName="startOffset" from="0%" to="50%" begin="0s" dur="5s" repeatCount="indefinite"></animate> -->
+              </textPath>
+
+            </text>
+          </svg> -->
+            </div>
+            <img src="/assets/gravura.png">
+            <div class="red-line"></div>
+            <div class="text-overlay">
+              <p id="pm25Value">00</p>
+
+            </div>
+        </div>
+        <div class="vertical-text">
+            <p>-15.763214720788621, -47.87064986862944</p>
+        </div>
+        <div class="list-text">
+            <ul>
+                <a  href="#" onmouseover="showIframe(event)"><li>localização</li></a>
+                <a href="#" onmouseover="showTextBox(event)"><li> sobre</li></a>
+                <a href="#" onmouseover="showImage(event)"><li>coisa</li></a>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+
